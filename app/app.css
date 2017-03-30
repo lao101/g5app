@@ -1,0 +1,18 @@
+﻿@import 'nativescript-theme-core/css/core.light.css';
+
+.btn {
+    font-size: 14;
+}
+
+ActionBar {
+    color: #fff;
+    background-color: #069;
+}
+
+.page-content {
+    margin: 10;
+}
+
+.fa {
+    font-family: "FontAwesome";
+}

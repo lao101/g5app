@@ -1,0 +1,33 @@
+<Page loaded="pageLoad">
+
+    <Page.actionBar>
+        <ActionBar title="{{app}}">
+            <android>
+                <NavigationButton android.systemIcon="ic_menu_home" tap="goHome" />
+            </android>
+            <ActionBar.actionItems>
+                 <NavigationButton android.systemIcon="ic_menu_login" tap="login" />
+            </ActionBar.actionItems>
+        </ActionBar>
+    </Page.actionBar>
+
+    <ListView id="myList" items="{{list}}" class="page-content">
+        <ListView.itemTemplate>
+            <StackLayout orientation="horizontal">
+                <Label class="id" text="{{ '#' + message_id}}" />
+                <StackLayout orientation="vertical">
+                    <Label class="message" textWrap="true" text="{{message}}" />
+                    <StackLayout orientation="horizontal" class="pt-12">
+                        <Label class="name" text="{{name}}" />
+                        <Label class="dt" text="{{ ' (' + dt + ')' }}" />
+                    </StackLayout>
+                    <StackLayout orientation="horizontal" class="pull-right">
+                        <Label text="&#xf0fe;" class="fa text-success icon" tap="onAdd" />
+                        <Label text="&#xf14b;" class="fa text-info icon" index="{{message_id}}" tap="onEdit" />
+                        <Label text="&#xf146;" class="fa text-danger icon" index="{{message_id}}" tap="onDelete" />
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>
+</Page>

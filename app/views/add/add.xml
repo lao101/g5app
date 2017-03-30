@@ -1,0 +1,7 @@
+<Page loaded="pageLoaded">
+    <StackLayout orientation="vertical" class="page-content">
+        <TextField id="name" hint="ป้อนชื่อ" text="{{ name }}"/>
+        <TextField id="message" hint="ข้อความ" text="{{ message }}" />
+        <Button text="บันทึก" class="btn btn-success" tap="setMessage" />
+    </StackLayout>
+</Page>

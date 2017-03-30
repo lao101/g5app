@@ -1,0 +1,11 @@
+<Page loaded="pageLoaded">
+    <StackLayout orientation="vertical" class="page-content">
+        <Label text="{{message_id}}" class="text-right" />
+        <TextView text="{{name}}" />
+        <TextView text="{{message}}" />
+        <StackLayout orientation="horizontal" class="center-block">
+            <Button text="Save" class="btn btn-success" tap="goSave" />
+            <Button text="Cancel" class="btn btn-warning" tap="goHome" />
+        </StackLayout>
+    </StackLayout>
+</Page>
